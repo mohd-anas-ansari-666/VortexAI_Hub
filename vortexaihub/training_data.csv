@@ -1,0 +1,84 @@
+text,intent
+what's the weather like today,weather
+weather forecast for tomorrow,weather
+will it rain today,weather
+temperature in New York,weather
+how hot is it outside,weather
+weather conditions in London,weather
+is it going to snow this weekend,weather
+current weather in Tokyo,weather
+weather in Paris today,weather
+forecast for next week,weather
+will it be sunny in the afternoon,weather
+how cold is it in Toronto,weather
+when is the next storm coming,weather
+weather updates in Dubai,weather
+current temperature in San Francisco,weather
+what's the air quality today,aqi
+air quality index in Delhi,aqi
+is the air pollution bad today,aqi
+AQI levels in Beijing,aqi
+pollution levels near me,aqi
+air quality forecast,aqi
+PM2.5 levels in my area,aqi
+is it safe to go outside with current air quality,aqi
+air quality in Los Angeles,aqi
+how is the air quality in London today,aqi
+current pollution in Mumbai,aqi
+will the air quality improve tomorrow,aqi
+PM10 levels in Beijing,aqi
+what are the pollutants in the air right now,aqi
+is the air quality dangerous in my city,aqi
+latest news,news
+what's happening in the world,news
+breaking news today,news
+news about technology,news
+current events,news
+sports news,news
+business headlines,news
+what's in the news about climate change,news
+political news today,news
+latest news in the world of finance,news
+news about the stock market,news
+what's happening in Hollywood,news
+updates from the world of science,news
+global news on health and wellness,news
+is there any news about space exploration,news
+hello,greeting
+hi there,greeting
+hey,greeting
+good morning,greeting
+good afternoon,greeting
+howdy,greeting
+greetings,greeting
+nice to meet you,greeting
+hi,greeting
+yo,greeting
+what's up,greeting
+good evening,greeting
+sup,greeting
+how's it going,greeting
+tell me a joke,general
+what can you do,general
+who are you,general
+give me information about machine learning,general
+explain quantum computing,general
+how to make pasta,general
+tell me about the history of Rome,general
+what's the meaning of life,general
+who invented the internet,general
+tell me about ancient Egypt,general
+how does the brain work,general
+what is artificial intelligence,general
+what's the tallest mountain in the world,general
+can you explain the theory of relativity,general
+what is a black hole,general
+how can I improve my productivity,general
+tell me the history of the Roman Empire,general
+what is the capital of Japan,general
+tell me about Leonardo da Vinci,general
+what's the largest ocean,general
+who is the president of the United States,general
+what happened during World War II,general
+how do vaccines work,general
+what is blockchain technology,general

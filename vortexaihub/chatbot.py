@@ -5,7 +5,7 @@ from vortexaihub.apis import get_weather, get_aqi, get_news, get_gemini_response
 class ChatBot:
     def __init__(self):
         """Initialize the chatbot with an intent classifier"""
-        self.intent_classifier = IntentClassifier(model_path='intent_model.h5', vectorizer_path='tfidf_vectorizer.pkl', encoder_path='label_encoder.pkl')
+        self.intent_classifier = IntentClassifier(model_path='intent_model.h5', vectorizer_path='tfidf_vectorizer.pkl', encoder_path='label_encoder.pkl', train=False)
     
     def get_greeting(self):
         """Return a random greeting message"""

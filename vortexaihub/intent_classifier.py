@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import tensorflow as tf
 import pickle
@@ -10,32 +11,35 @@ from vortexaihub.dataset import get_training_data
 
 
 class IntentClassifier:
-    def __init__(self, training_data=None, model_path='intent_model.h5', vectorizer_path='tfidf_vectorizer.pkl', encoder_path='label_encoder.pkl'):
+    def __init__(self, training_data=None, model_path='intent_model.h5', vectorizer_path='tfidf_vectorizer.pkl', encoder_path='label_encoder.pkl', train=False):
+        """
+        Initializes the IntentClassifier, either loading pretrained models or training a new one based on the 'train' flag.
+        
+        Args:
+            training_data (list): Optional training data if retraining is needed.
+            model_path (str): Path to save/load the Keras model.
+            vectorizer_path (str): Path to save/load the TF-IDF vectorizer.
+            encoder_path (str): Path to save/load the LabelEncoder.
+            train (bool): If True, the model is trained; otherwise, the pretrained model is loaded.
+        """
+        
         self.model_path = model_path
         self.vectorizer_path = vectorizer_path
         self.encoder_path = encoder_path
+
+        # Train or load models based on the train flag
+        if train:
+            self.train_model(training_data)
+        else:
+            self.load_model()
         
-        # Try loading the pretrained model, vectorizer, and label encoder
-        try:
-            # Load the Keras model
-            self.model = tf.keras.models.load_model(self.model_path)
-            print("Loaded pretrained model.")
-            
-            # Load the TF-IDF vectorizer
-            with open(self.vectorizer_path, 'rb') as file:
-                self.tfidf_vectorizer = pickle.load(file)
-            print("Loaded pretrained TF-IDF vectorizer.")
-            
-            # Load the LabelEncoder
-            with open(self.encoder_path, 'rb') as file:
-                self.label_encoder = pickle.load(file)
-            print("Loaded pretrained LabelEncoder.")
-        
-        except:
-            print("No pretrained model, vectorizer, or encoder found, training a new model.")
-            # If no pretrained model or vectorizer is found, train a new one
+    def train_model(self, training_data=None):
+            """Train the model with the provided training data."""
+            print("Training the model...")
+
             if training_data is None:
                 training_data = get_training_data()
+
             self.texts = [item["text"] for item in training_data]
             self.labels = [item["intent"] for item in training_data]
 
@@ -57,19 +61,35 @@ class IntentClassifier:
             # Train the model
             self._train_model()
 
-            # Save the model
+            # Save the trained model
             self.model.save(self.model_path)
             print(f"Model saved at {self.model_path}")
 
-            # Save the TF-IDF vectorizer using pickle
+            # Save the TF-IDF vectorizer
             with open(self.vectorizer_path, 'wb') as file:
                 pickle.dump(self.tfidf_vectorizer, file)
             print(f"TF-IDF Vectorizer saved at {self.vectorizer_path}")
 
-            # Save the LabelEncoder using pickle
+            # Save the LabelEncoder
             with open(self.encoder_path, 'wb') as file:
                 pickle.dump(self.label_encoder, file)
             print(f"LabelEncoder saved at {self.encoder_path}")
+
+    def load_model(self):
+            """Load the pretrained model, vectorizer, and encoder."""
+            if os.path.exists(self.model_path) and os.path.exists(self.vectorizer_path) and os.path.exists(self.encoder_path):
+                print("Loading pretrained model...")
+                self.model = tf.keras.models.load_model(self.model_path)
+
+                with open(self.vectorizer_path, 'rb') as file:
+                    self.tfidf_vectorizer = pickle.load(file)
+
+                with open(self.encoder_path, 'rb') as file:
+                    self.label_encoder = pickle.load(file)
+                print("Loaded pretrained model, vectorizer, and encoder.")
+            else:
+                print("Pretrained models not found. Please train the model first.")
+                self.train_model()        
 
     def _build_model(self):
         """Build and compile the Keras model."""
@@ -94,7 +114,7 @@ class IntentClassifier:
     
     def _train_model(self):
         """Train the Keras model with the training data."""
-        self.model.fit(self.X_train, self.y_train, epochs=5, batch_size=32, validation_data=(self.X_test, self.y_test))
+        self.model.fit(self.X_train, self.y_train, epochs=20, batch_size=32, validation_data=(self.X_test, self.y_test))
     
     def predict_intent(self, query):
         """

@@ -14,6 +14,55 @@ how cold is it in Toronto,weather
 when is the next storm coming,weather
 weather updates in Dubai,weather
 current temperature in San Francisco,weather
+how much will it rain tomorrow,weather
+weather alert in Los Angeles,weather
+is it safe to go hiking today with the weather,weather
+will it snow tomorrow in Boston,weather
+is there a chance of rain this weekend in Seattle,weather
+how is the weather in Chicago this evening,weather
+is there a storm coming near Miami,weather
+what is the air quality in Denver,weather
+what is the UV index today in Sydney,weather
+when will the temperature drop in Rome,weather
+forecast for next weekend in Berlin,weather
+will there be thunderstorms in Houston tonight,weather
+weather conditions in the mountains,weather
+how cold will it be tomorrow in Montreal,weather
+how hot is it in Madrid today,weather
+current temperature in Cape Town,weather
+how windy is it in Barcelona,weather
+what is the forecast for Paris this weekend,weather
+will it rain in Tokyo this afternoon,weather
+forecast for the upcoming week in Miami,weather
+is there a heatwave expected in Los Angeles,weather
+how is the weather in Vancouver this week,weather
+is it foggy in San Francisco,weather
+when does the rainy season start in Manila,weather
+how much rain is expected this month in London,weather
+forecast for this winter in New York,weather
+will it be cloudy tomorrow in Istanbul,weather
+how warm will it be in Greece in June,weather
+how humid is it today in Jakarta,weather
+current temperature in Cairo,weather
+what is the pollen count in the city today,weather
+when will the snowstorm hit in Boston,weather
+what's the average temperature in Cairo during summer,weather
+will it be foggy tomorrow in London,weather
+is the weather favorable for outdoor activities in Seattle today,weather
+what's the temperature in Beijing right now,weather
+how bad is the air quality in Mexico City today,weather
+how is the weather in the Swiss Alps this winter,weather
+will it be sunny all day in Berlin,weather
+how are the weather conditions for a beach day in Cancun,weather
+is it rainy in Rome this morning,weather
+forecast for this month in Tokyo,weather
+how cold will it be in the mountains this weekend,weather
+what's the weather like in the Sahara Desert today,weather
+will it be clear skies tomorrow in Paris,weather
+is it sunny in Dubai today,weather
+will there be thunderstorms in New York City this afternoon,weather
+how severe is the weather warning for Florida,weather
+how long will this heatwave last in Phoenix,weather
 what's the air quality today,aqi
 air quality index in Delhi,aqi
 is the air pollution bad today,aqi
@@ -29,6 +78,55 @@ will the air quality improve tomorrow,aqi
 PM10 levels in Beijing,aqi
 what are the pollutants in the air right now,aqi
 is the air quality dangerous in my city,aqi
+is the air quality good today,aqi
+current AQI in New York,aqi
+air pollution levels in Paris,aqi
+is it safe to run outside with the air quality in Tokyo,aqi
+how polluted is the air in Delhi today,aqi
+will the air quality improve in San Francisco,aqi
+air quality index in Mexico City,aqi
+how bad is the air quality in Beijing right now,aqi
+is the air quality in Tokyo safe for children,aqi
+is the air quality dangerous for sensitive groups,aqi
+air quality forecast for next week in London,aqi
+AQI levels in Rio de Janeiro,aqi
+current air quality in Sydney,aqi
+how's the pollution in Mumbai today,aqi
+is the air quality better today in Los Angeles,aqi
+PM2.5 levels in Hong Kong,aqi
+how much air pollution in Dubai today,aqi
+is it safe to go outside with the pollution in Beijing,aqi
+is the air quality hazardous in New Delhi today,aqi
+current pollution levels in Singapore,aqi
+how bad is the air quality in Jakarta,aqi
+will air pollution levels rise tomorrow in Chennai,aqi
+air quality in Cairo today,aqi
+is there a pollution alert in Berlin today,aqi
+how clean is the air in Madrid,aqi
+air quality alert in Shanghai,aqi
+how bad is the PM10 level in Mumbai today,aqi
+current air quality in Cape Town,aqi
+is it safe to breathe in the air in Seoul,aqi
+is the air quality better in Paris today,aqi
+how polluted is the air in Mexico City,aqi
+is the air quality harmful to people with asthma in Beijing,aqi
+air pollution levels in San Francisco,aqi
+current AQI in Cape Town,aqi
+how polluted is the air in Jakarta today,aqi
+will the air quality get worse in Chicago,aqi
+air quality index in Tokyo right now,aqi
+how is the air quality in Sao Paulo today,aqi
+air quality forecast for tomorrow in Manila,aqi
+will air pollution improve in Hong Kong,aqi
+what is the current air quality in Nairobi,aqi
+how polluted is the air in Bangkok today,aqi
+is the air quality safe to breathe in Paris,aqi
+is the air pollution high today in Toronto,aqi
+what's the air quality in New York today,aqi
+air pollution forecast in Dubai,aqi
+PM10 levels in Mexico City,aqi
+is the air quality good for outdoor activities in New York,aqi
+is the air quality hazardous for seniors in LA,aqi
 latest news,news
 what's happening in the world,news
 breaking news today,news
@@ -44,6 +142,46 @@ what's happening in Hollywood,news
 updates from the world of science,news
 global news on health and wellness,news
 is there any news about space exploration,news
+latest updates in artificial intelligence,news
+breaking news in politics,news
+is there any news on climate change policies,news
+sports updates,news
+what's the latest on the tech industry,news
+current news in the healthcare industry,news
+what's the latest in entertainment news,news
+what's happening in the music industry,news
+news on the latest space missions,news
+current world news updates,news
+breaking news in environmental issues,news
+latest updates on cryptocurrency,news
+what's happening in the world of startups,news
+news on global health initiatives,news
+latest stories from the world of politics,news
+news about recent breakthroughs in science,news
+breaking news in world economy,news
+what's trending in global affairs,news
+what's happening in the business world,news
+what's happening in the gaming industry,news
+updates in international relations,news
+global updates on education policies,news
+news about innovations in renewable energy,news
+latest developments in cybersecurity,news
+breaking news about global politics,news
+what's happening in the fashion industry,news
+updates on recent political movements,news
+what's new in the world of digital marketing,news
+news on recent climate change research,news
+latest updates in the AI field,news
+breaking news in the startup ecosystem,news
+what's happening in the electric vehicle market,news
+breaking news in world health,news
+latest updates from the United Nations,news
+news on tech innovations,news
+current events in renewable energy,news
+is there any news about global poverty,news
+updates on recent geopolitical tensions,news
+latest breaking news about the economy,news
+what's the latest on the war on drugs,news
 hello,greeting
 hi there,greeting
 hey,greeting
@@ -58,6 +196,34 @@ what's up,greeting
 good evening,greeting
 sup,greeting
 how's it going,greeting
+hey there,greeting
+what's good,greeting
+good day,greeting
+how are you,greeting
+how you doing,greeting
+hello there,greeting
+hey what's up,greeting
+g'day,greeting
+salutations,greeting
+bonjour,greeting
+hola,greeting
+what's cracking,greeting
+what's happening,greeting
+how's everything,greeting
+good to see you,greeting
+what's new,greeting
+long time no see,greeting
+howdy partner,greeting
+hiya,greeting
+hey hey,greeting
+morning,greeting
+afternoon,greeting
+evening,greeting
+yo yo,greeting
+what's the deal,greeting
+hiya there,greeting
+how are things,greeting
+what’s popping,greeting
 tell me a joke,general
 what can you do,general
 who are you,general
@@ -82,3 +248,43 @@ who is the president of the United States,general
 what happened during World War II,general
 how do vaccines work,general
 what is blockchain technology,general
+what are some healthy breakfast ideas,general
+can you give me a recipe for a quick dinner,general
+how to cook a perfect steak,general
+tell me how to make sushi at home,general
+what's the best way to lose weight,general
+how can I start working out,general
+what are some exercises for a flat stomach,general
+how do I improve my flexibility,general
+how to cook a healthy meal on a budget,general
+what are some cooking tips for beginners,general
+give me a recipe for a vegetarian meal,general
+how can I make my workouts more effective,general
+what are the benefits of yoga,general
+what are some tips for personal growth,general
+how can I manage my time better,general
+how to stay motivated during the day,general
+tell me some mindfulness exercises,general
+how to develop a growth mindset,general
+how do I create a morning routine,general
+how to build self-discipline,general
+what are some productivity hacks,general
+how can I improve my mental health,general
+what are some habits of successful people,general
+what are some ways to deal with stress,general
+how to overcome procrastination,general
+what is positive thinking and how to practice it,general
+how can I improve my communication skills,general
+give me tips for building self-confidence,general
+what's the best way to start meditation,general
+how can I start journaling for personal growth,general
+tell me how to stay fit at home,general
+how to cook a vegan meal,general
+what's a good workout routine for beginners,general
+how do I improve my posture,general
+how to stay healthy during the winter,general
+what's the best way to prepare for a marathon,general
+how to increase energy naturally,general
+how to improve my focus,general
+what is intermittent fasting,general
+what are the benefits of drinking water,general
